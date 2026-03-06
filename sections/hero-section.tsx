@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { TableIcon } from "lucide-react";
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
 
@@ -13,12 +12,9 @@ export default function HeroSection() {
   const handleSignup = () => {
     router.push("/signup");
   };
-  
 
   return (
     <div className="relative min-h-screen w-full bg-white dark:bg-black">
-      <Navbar />
-
       <div className="flex min-h-[calc(100vh-73px)] w-full items-center justify-center px-4">
         <div className="w-full max-w-6xl mx-auto">
           <h1 className="relative z-10 mx-auto max-w-5xl text-center text-3xl font-bold text-gray-900 md:text-6xl lg:text-7xl dark:text-white">
@@ -67,16 +63,3 @@ export default function HeroSection() {
     </div>
   );
 }
-
-const Navbar = () => {
-  return (
-    <nav className="flex w-full items-center justify-between border-b border-gray-200 px-8 py-5 dark:border-gray-800">
-      <div className="flex items-center gap-3">
-        <TableIcon className="w-8 h-8 text-gray-900 dark:text-white" />
-        <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
-          Eyego Platform
-        </h1>
-      </div>
-    </nav>
-  );
-};
