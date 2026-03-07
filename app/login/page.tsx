@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function LoginPage() {
   const dispatch = useDispatch<AppDispatch>();
@@ -32,11 +33,14 @@ export default function LoginPage() {
       <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         <div className="w-full lg:w-1/2 flex items-center justify-center order-1 lg:order-2">
           <div className="w-full">
-            <img
+            {/* <Image
               src="/design-stats-animate.svg"
               alt="Business illustration"
-              className="w-full h-40 md:h-auto"
-            />
+              width={800}
+              height={800}
+              className="w-full h-40 md:h-auto scale-120 md:scale-125"
+              priority
+            /> */}
           </div>
         </div>
 
