@@ -17,8 +17,8 @@ export default function HeroSection() {
     <div className="relative min-h-screen w-full bg-white dark:bg-black">
       <div className="flex min-h-[calc(100vh-73px)] w-full items-center justify-center px-4">
         <div className="w-full max-w-6xl mx-auto">
-          <h1 className="relative z-10 mx-auto max-w-5xl text-center text-3xl font-bold text-gray-900 md:text-6xl lg:text-7xl dark:text-white">
-            {"Explore my responsive modern dashboard using React, Next, Tailwind CSS"
+          <h1 className="relative z-10 mx-auto max-w-5xl text-center text-3xl font-sans text-gray-900 md:text-6xl lg:text-7xl dark:text-white">
+            {"Explore my responsive modern dashboard for Eyego"
               .split(" ")
               .map((word, index) => (
                 <motion.span
@@ -40,7 +40,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="relative z-10 mx-auto max-w-2xl mt-6 text-center text-xl text-gray-600 dark:text-gray-400"
+            className="relative z-10 mx-auto font-sans max-w-2xl mt-6 text-center text-xl text-gray-600 dark:text-gray-400"
           >
             see a glimpse of what we offer
           </motion.p>
