@@ -52,7 +52,6 @@ export function DataTable<TData, TValue>({
 
   const filteredRows = table.getFilteredRowModel().rows;
 
-
   const exportExcel = async () => {
     const XLSX = await import("xlsx");
     const exportData = filteredRows.map((row) => row.original);
@@ -87,12 +86,12 @@ export function DataTable<TData, TValue>({
     <div>
       <div className="flex items-center justify-between py-4 gap-3">
         <Input
-          placeholder="Filter emails..."
+          placeholder="Emails search"
           value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
           onChange={(e) =>
             table.getColumn("email")?.setFilterValue(e.target.value)
           }
-          className="max-w-sm"
+          className="p-4 w-40 h-8 md:max-w-sm md:w-full"
         />
 
         <div className="flex gap-2">
