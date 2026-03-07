@@ -24,7 +24,7 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <h3 className="text-sm text-accent mb-4">Revenue Overview</h3>
+          <h3 className="text-sm md:text-xl text-accent mb-4">Revenue Overview</h3>
           <RevenueChart />
         </div>
 
