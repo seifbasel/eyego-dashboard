@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "@/store/authSlice";
@@ -10,7 +9,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function LoginPage() {
   const dispatch = useDispatch<AppDispatch>();
