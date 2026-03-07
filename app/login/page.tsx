@@ -33,14 +33,14 @@ export default function LoginPage() {
       <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         <div className="w-full lg:w-1/2 flex items-center justify-center order-1 lg:order-2">
           <div className="w-full">
-            {/* <Image
+            <Image
               src="/design-stats-animate.svg"
               alt="Business illustration"
               width={800}
               height={800}
               className="w-full h-40 md:h-auto scale-120 md:scale-125"
               priority
-            /> */}
+            />
           </div>
         </div>
 
