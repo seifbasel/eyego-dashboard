@@ -28,19 +28,6 @@ export const mockPayments: Payment[] = [
   { id: "txn_s7t8u9v0", amount: 49.99,  status: "processing", email: "samuel.martin@fastmail.fm",    },
   { id: "txn_w1x2y3z4", amount: 185.00, status: "success",    email: "nora.garcia@gmail.com",        },
   { id: "txn_a5b6c7d8", amount: 70.20,  status: "pending",    email: "oliver.martinez@yahoo.com",    },
-  { id: "txn_e9f0g1h2", amount: 320.50, status: "success",    email: "mila.rodriguez@gmail.com",     },
-  { id: "txn_i3j4k5l6", amount: 11.99,  status: "failed",     email: "leo.lewis@outlook.com",        },
-  { id: "txn_m7n8o9p0", amount: 95.80,  status: "success",    email: "aria.lee@icloud.com",          },
-  { id: "txn_q1r2s3t4", amount: 130.00, status: "processing", email: "elijah.walker@gmail.com",      },
-  { id: "txn_u5v6w7x8", amount: 28.40,  status: "pending",    email: "scarlett.hall@proton.me",      },
-  { id: "txn_y9z0a1b2", amount: 245.75, status: "success",    email: "carter.allen@gmail.com",       },
-  { id: "txn_c3d4e5f6", amount: 61.30,  status: "failed",     email: "layla.young@outlook.com",      },
-  { id: "txn_g7h8i9j0", amount: 379.00, status: "success",    email: "daniel.king@yahoo.com",        },
-  { id: "txn_k1l2m3n4", amount: 42.60,  status: "pending",    email: "penelope.scott@gmail.com",     },
-  { id: "txn_o5p6q7r8", amount: 108.00, status: "success",    email: "wyatt.green@fastmail.fm",      },
-  { id: "txn_s9t0u1v2", amount: 17.99,  status: "failed",     email: "luna.baker@icloud.com",        },
-  { id: "txn_w3x4y5z6", amount: 290.00, status: "success",    email: "julian.adams@gmail.com",       },
-  { id: "txn_a7b8c9d0", amount: 55.50,  status: "processing", email: "aurora.nelson@outlook.com",    },
 ];
 
 
