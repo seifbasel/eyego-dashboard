@@ -13,18 +13,18 @@ export default function Dashboard() {
   return (
     <div className="p-10">
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Welcome {user?.name}</h1>
+        <h1 className="text-xl md:text-3xl font-bold">Welcome {user?.name}</h1>
         <Button
           onClick={() => router.push("/data-table")}
-          className="bg-accent text-text"
+          className="bg-muted text-text"
         >
           View Data Table →
         </Button>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <h3 className="text-sm text-accent mb-4">Revenue Overview</h3>
+          <h3 className="text-sm md:text-xl text-accent mb-4">Revenue Overview</h3>
           <RevenueChart />
         </div>
 

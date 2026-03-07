@@ -47,7 +47,7 @@ export default function SignupPage() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-black px-4">
-      <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+      <div className="shadow-input mx-auto w-full max-w-md md:border-2 border-b-cyan-400 rounded-none p-4 md:rounded-2xl md:p-8 dark:bg-black">
         <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
           Create an account
         </h2>

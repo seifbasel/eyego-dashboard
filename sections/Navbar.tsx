@@ -29,13 +29,16 @@ export default function Navbar() {
     dispatch(logout());
     router.push("/login");
   };
+  const home = () => {
+    router.push("/");
+  };
 
   return (
     <nav className="flex w-full items-center justify-between border-b border-gray-200 px-8 py-5 dark:border-gray-800">
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 cursor-pointer" onClick={home}>
         <TableIcon className="w-8 h-8 text-gray-900 dark:text-white" />
         <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
-          Eyego Platform
+          Eyego
         </h1>
       </div>
 
