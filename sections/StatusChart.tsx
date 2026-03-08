@@ -51,8 +51,8 @@ export default function StatusChart() {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-zinc-900 rounded-xl border border-gray-200 dark:border-zinc-800 p-4">
-      <h2 className="text-sm font-semibold text-gray-700 dark:text-zinc-300 mb-3">
+    <div className="bg-white dark:bg-zinc-800 rounded-xl border p-4">
+      <h2 className="text-base font-semibold text-text dark:text-zinc-300 mb-3">
         Transaction Status Breakdown
       </h2>
       <canvas ref={canvasRef} />

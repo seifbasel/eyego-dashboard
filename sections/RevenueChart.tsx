@@ -42,8 +42,8 @@ export default function RevenueChart() {
   }, []);
 
   return (
-    <div className="bg-card dark:bg-zinc-900 rounded-xl border border-gray-200 dark:border-zinc-800 p-5">
-      <h2 className="text-sm font-semibold text-gray-700 dark:text-zinc-300 mb-4">
+    <div className="bg-white dark:bg-zinc-900 rounded-xl border p-5">
+      <h2 className="text-base font-semibold text-text dark:text-zinc-300 mb-4">
         Monthly Revenue
       </h2>
       <canvas ref={canvasRef} />
