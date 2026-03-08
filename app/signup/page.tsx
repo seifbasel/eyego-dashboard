@@ -32,11 +32,9 @@ export default function SignupPage() {
     setError("");
 
     try {
-      // Using mock signup - in real app, this would be an API call
       const user = await mockSignup(formData.email, formData.password);
       console.log("Signup successful:", user);
 
-      // Redirect to login page after successful signup
       router.push("/login?registered=true");
     } catch (err: any) {
       setError(err.message);
