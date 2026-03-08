@@ -11,8 +11,8 @@ export default function Dashboard() {
   const router = useRouter();
 
   return (
-    <div className="p-10">
-      <div className="flex items-center justify-between mb-6">
+    <div className="p-10 ">
+      <div className="flex items-center  justify-between mb-6">
         <h1 className="text-xl md:text-3xl font-bold">Welcome {user?.name}</h1>
         <Button
           onClick={() => router.push("/data-table")}

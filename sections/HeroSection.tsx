@@ -3,15 +3,23 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "@/store/store";
+import { loadUser } from "@/store/authSlice";
+import { useEffect } from "react";
 
 export default function HeroSection() {
   const router = useRouter();
-  const handleLogin = () => {
-    router.push("/login");
-  };
-  const handleSignup = () => {
-    router.push("/signup");
-  };
+  const dispatch = useDispatch();
+  const user = useSelector((state: RootState) => state.auth.loggedInUser);
+
+  useEffect(() => {
+    dispatch(loadUser() as any)
+  }, [dispatch])
+
+  useEffect(() => {
+    if (user) router.push("/dashboard")
+  }, [user, router])
 
   return (
     <div className="relative min-h-screen w-full bg-white dark:bg-black">
@@ -25,10 +33,7 @@ export default function HeroSection() {
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.05,
-                  }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="inline-block mr-3"
                 >
                   {word}
@@ -51,10 +56,10 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="relative z-10 mt-10 flex flex-wrap items-center justify-center gap-4"
           >
-            <Button onClick={handleLogin} variant="default" size="2xl">
+            <Button onClick={() => router.push("/login")} variant="default" size="2xl">
               Login
             </Button>
-            <Button onClick={handleSignup} variant="outline" size="2xl">
+            <Button onClick={() => router.push("/signup")} variant="outline" size="2xl">
               Sign up
             </Button>
           </motion.div>
